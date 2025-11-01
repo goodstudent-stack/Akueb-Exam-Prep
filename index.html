@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AKUEB Study Portal</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>AKUEB Study Portal</h1>
+    <div class="theme-toggle">
+      <button id="themeBtn">🌙</button>
+    </div>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <li><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Classes ▼</a>
+        <div class="dropdown-content">
+          <a href="#">Class 9</a>
+          <a href="#">Class 10</a>
+          <a href="#">Class 11</a>
+          <a href="#">Class 12</a>
+        </div>
+      </li>
+      <li><a href="#">Past Papers</a></li>
+      <li><a href="#">Chapter Notes</a></li>
+      <li><a href="#">Quizzes</a></li>
+      <li><a href="#">AI Tutor</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero">
+    <h2>Empowering Students with AI-Powered Learning</h2>
+    <p>Access AKUEB past papers, chapter-wise notes, and quizzes — all in one place.</p>
+    <input type="text" id="searchBar" placeholder="Search topic, paper, or subject...">
+  </section>
+
+  <section class="cards">
+    <div class="card">
+      <h3>Past Papers</h3>
+      <p>Find AKUEB Class 9–12 past papers with detailed solutions.</p>
+      <button>Explore</button>
+    </div>
+    <div class="card">
+      <h3>Quizzes</h3>
+      <p>Test your knowledge with smart AI-generated quizzes.</p>
+      <button>Start Quiz</button>
+    </div>
+    <div class="card">
+      <h3>AI Tutor</h3>
+      <p>Chat with an AI tutor and get easy explanations for any topic.</p>
+      <button id="openChat">Open Chat</button>
+    </div>
+  </section>
+
+  <section id="chatbotSection" class="chatbot hidden">
+    <div class="chat-header">
+      <h3>AI Tutor</h3>
+      <button id="closeChat">✖</button>
+    </div>
+    <div class="chat-window" id="chatWindow">
+      <p class="bot">👋 Hi! I’m your AI Tutor. Ask me about any AKUEB topic!</p>
+    </div>
+    <div class="chat-input">
+      <input type="text" id="userInput" placeholder="Type your question...">
+      <button id="sendBtn">Send</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 AKUEB Study Portal | All Rights Reserved</p>
+    <p>Other Boards — Coming Soon</p>
+  </footer>
+</body>
+</html>
